@@ -1,0 +1,17 @@
+@import "tailwindcss";
+html,
+body {
+  overflow-x: hidden;
+  background-color: #0b1622;
+}
+/* Change bg & text color of autocomplete */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #0b1622 inset !important; /* background color */
+  -webkit-text-fill-color: #e5e7eb !important; /* text color */
+}
+
+/* Change bg color when focused */
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #0e1b2a inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
