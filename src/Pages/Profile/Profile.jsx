@@ -52,7 +52,7 @@ export default function Profile() {
             id="userName"
             name="userName"
             type="text"
-            placeholder="admin@reef.com"
+            placeholder="Omar Mansour"
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.userName}
