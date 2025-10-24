@@ -53,7 +53,7 @@ export default function Layout() {
           fullscreen={fullscreen}
           setFullscreen={setFullscreen}
         />
-        <main className="flex-1 p-6">
+        <main className="flex-1 py-6 px-0">
           <Outlet />
         </main>
       </div>
