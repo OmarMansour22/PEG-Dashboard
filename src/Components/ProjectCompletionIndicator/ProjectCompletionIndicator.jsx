@@ -1,6 +1,7 @@
 export default function ProjectCompletionIndicator() {
   return (
-    <div className="flex flex-col justify-between h-[300px] pt-10">
+    <div className="text-gray-300 flex flex-col justify-between gap-6 h-[300px] overflow-auto p-1">
+      <div></div>
       {/* المخطط له + الحياد */}
       <div className="flex justify-between text-sm text-gray-300 px-3">
         <div className="flex flex-col items-center">
@@ -25,15 +26,17 @@ export default function ProjectCompletionIndicator() {
         </div>
       </div>
 
-      {/* التوضيح بالألوان */}
-      <div className="flex justify-center gap-2 text-xs text-gray-400">
-        <div className="flex items-center gap-1">
-          <span className="w-3 h-3 bg-green-500 rounded-full"></span>
-          <span>الإنجاز الفعلي</span>
-        </div>
-        <div className="flex items-center gap-1">
-          <span className="w-3 h-3 bg-yellow-400 rounded-full"></span>
-          <span>الحياد</span>
+      <div>
+        {/* التوضيح بالألوان */}
+        <div className="flex justify-center gap-2 text-xs text-gray-400">
+          <div className="flex items-center gap-1">
+            <span className="w-3 h-3 bg-green-500 rounded-full"></span>
+            <span>الإنجاز الفعلي</span>
+          </div>
+          <div className="flex items-center gap-1">
+            <span className="w-3 h-3 bg-yellow-400 rounded-full"></span>
+            <span>الحياد</span>
+          </div>
         </div>
       </div>
     </div>

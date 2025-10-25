@@ -64,7 +64,7 @@ const renderArrowLabel = ({
 
 export default function QualitySection() {
   return (
-    <div className="text-white rounded-2xl flex flex-col items-center w-full">
+    <div className="text-gray-300 text-xs flex flex-col justify-between h-[300px] overflow-auto">
       <div className="flex flex-col md:flex-row justify-center items-center gap-5 w-full">
         {/* Chart 1 */}
         <div className="w-[250px] h-[250px] relative">
@@ -144,7 +144,7 @@ export default function QualitySection() {
       </div>
 
       {/* Legend */}
-      <div className="flex flex-wrap justify-center gap-4 mt-4 text-xs text-gray-300">
+      <div className="flex flex-wrap justify-center gap-4 text-xs text-gray-300">
         <div className="flex items-center gap-1">
           <span className="w-3 h-3 rounded-full bg-[#a78bfa]" />
           <span>معتمد بدون ملاحظات</span>

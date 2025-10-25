@@ -20,9 +20,9 @@ const projectData = [
 
 export default function ProjectCard() {
   return (
-    <div className="text-gray-300 text-xs flex flex-col justify-between gap-6">
+    <div className="text-gray-300 text-xs flex flex-col justify-between gap-6 h-[300px] overflow-auto p-1">
       {/* Info grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-4">
+      <div className="grid grid-cols-2 gap-x-4 gap-y-4">
         {projectData.map((item, index) => (
           <div
             key={index}

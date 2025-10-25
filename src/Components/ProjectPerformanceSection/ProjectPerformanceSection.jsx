@@ -24,7 +24,7 @@ const data = [
 
 const ProjectPerformanceSection = () => {
   return (
-    <div className="text-white rounded-2xl flex flex-col justify-between h-[300px]">
+    <div className="text-gray-300 text-xs flex flex-col justify-between gap-6 h-[300px] overflow-auto p-1">
       {/* Chart */}
       <div className="flex-1">
         <ResponsiveContainer width="100%" height="100%">

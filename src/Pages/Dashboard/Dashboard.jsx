@@ -52,23 +52,9 @@ export default function Dashboard() {
         {/* 4 البيانات المالية */}
         <Card
           title="البيانات المالية"
-          className="2xl:col-span-4 lg:col-span-6 col-span-12 flex flex-col justify-between"
+          className="2xl:col-span-4 lg:col-span-6 col-span-12"
         >
           <FinancePieChart />
-          <div className="flex justify-center gap-2 text-xs text-gray-400">
-            <span className="flex items-center gap-1">
-              <span className="w-3 h-3 bg-[#10b981] rounded-full"></span>
-              المصروف
-            </span>
-            <span className="flex items-center gap-1">
-              <span className="w-3 h-3 bg-[#f59e0b] rounded-full"></span>
-              قيد التنفيذ
-            </span>
-            <span className="flex items-center gap-1">
-              <span className="w-3 h-3 bg-[#64748b] rounded-full"></span>
-              المتبقي
-            </span>
-          </div>
         </Card>
         {/* 5 ما تم انجازة */}
         <Card

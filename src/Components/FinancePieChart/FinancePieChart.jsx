@@ -30,26 +30,44 @@ const renderLabel = ({ cx, cy, midAngle, outerRadius, percent }) => {
 
 export default function FinancePieChart() {
   return (
-    <div className="w-full h-[250px]">
-      <ResponsiveContainer>
-        <PieChart>
-          <Pie
-            data={data}
-            cx="50%"
-            cy="50%"
-            innerRadius={50}
-            outerRadius={80}
-            paddingAngle={4}
-            dataKey="value"
-            label={renderLabel}
-            labelLine={true}
-          >
-            {data.map((entry, i) => (
-              <Cell key={`cell-${i}`} fill={entry.color} />
-            ))}
-          </Pie>
-        </PieChart>
-      </ResponsiveContainer>
+    <div className="text-gray-300 text-xs flex flex-col justify-between gap-6 h-[300px] overflow-auto p-1">
+      <div className="w-full h-full">
+        <ResponsiveContainer>
+          <PieChart>
+            <Pie
+              data={data}
+              cx="50%"
+              cy="50%"
+              innerRadius={50}
+              outerRadius={80}
+              paddingAngle={4}
+              dataKey="value"
+              label={renderLabel}
+              labelLine={true}
+            >
+              {data.map((entry, i) => (
+                <Cell key={`cell-${i}`} fill={entry.color} />
+              ))}
+            </Pie>
+          </PieChart>
+        </ResponsiveContainer>
+      </div>
+      <div>
+        <div className="flex justify-center gap-2 text-xs text-gray-400">
+          <span className="flex items-center gap-1">
+            <span className="w-3 h-3 bg-[#10b981] rounded-full"></span>
+            المصروف
+          </span>
+          <span className="flex items-center gap-1">
+            <span className="w-3 h-3 bg-[#f59e0b] rounded-full"></span>
+            قيد التنفيذ
+          </span>
+          <span className="flex items-center gap-1">
+            <span className="w-3 h-3 bg-[#64748b] rounded-full"></span>
+            المتبقي
+          </span>
+        </div>
+      </div>
     </div>
   );
 }

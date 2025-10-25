@@ -18,7 +18,7 @@ const data = [
 
 export default function ProjectPerformanceChart() {
   return (
-    <div className="w-full h-[300px]">
+    <div className="text-gray-300 flex flex-col justify-between gap-6 h-[300px] overflow-auto p-1">
       <ResponsiveContainer>
         <BarChart data={data} barSize={20}>
           <CartesianGrid strokeDasharray="3 3" stroke="#334155" />

@@ -15,3 +15,21 @@ input:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px #0e1b2a inset !important;
   -webkit-text-fill-color: #ffffff !important;
 }
+
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px; /* width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #2d2d2d; /* Dark mode track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555; /* Dark mode thumb */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #777; /* Hover color */
+}

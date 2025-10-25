@@ -17,7 +17,7 @@ const data = [
 
 const RiskAssessmentChart = () => {
   return (
-    <div className="text-white rounded-2xl shadow-lg w-full h-[300px]">
+    <div className="text-gray-300 text-xs flex flex-col justify-between gap-6 h-[300px] overflow-auto p-1">
       <ResponsiveContainer width="100%" height="100%">
         <ScatterChart margin={{ top: 20, right: 30, bottom: 40, left: 10 }}>
           <CartesianGrid strokeDasharray="3 3" stroke="#ffffff55" />

@@ -19,7 +19,7 @@ export default function ImageSliderSection() {
   };
 
   return (
-    <div className="relative w-full h-full rounded-2xl overflow-hidden bg-slate-800 shadow-lg">
+    <div className="relative w-full h-full rounded-2xl overflow-hidden ">
       {/* Image */}
       <img
         src={images[currentIndex]}
